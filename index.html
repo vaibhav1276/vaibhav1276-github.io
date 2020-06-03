@@ -295,5 +295,41 @@
   </footer>
 
 </body>
-<script src="script.js"></script>
+<script>
+  // Get the modal
+var inmModal = document.getElementById('inmModal');
+var wuModal = document.getElementById('wuModal');
+var ofssModal = document.getElementById('ofssModal');
+
+//Opening Modal
+document.getElementById('inmBtn').addEventListener('click', function() {
+	inmModal.style.display = 'block';
+});
+document.getElementById('wuBtn').addEventListener('click', function() {
+	wuModal.style.display = 'block';
+});
+document.getElementById('ofssBtn').addEventListener('click', function() {
+	ofssModal.style.display = 'block';
+});
+
+// //Closing modal on clicking close sign
+// document.querySelector('#inmClose').addEventListener('click', function() {
+// 	inmModal.style.display = 'none';
+// });
+// document.querySelector('#wuClose').addEventListener('click', function() {
+// 	wuModal.style.display = 'none';
+// });
+// document.querySelector('#ofssClose').addEventListener('click', function() {
+// 	ofssModal.style.display = 'none';
+// });
+
+window.onclick = function(event) {
+	if (event.target == inmModal || event.target == wuModal || event.target == ofssModal) {
+		inmModal.style.display = 'none';
+		wuModal.style.display = 'none';
+		ofssModal.style.display = 'none';
+	}
+};
+
+</script>
 </html>

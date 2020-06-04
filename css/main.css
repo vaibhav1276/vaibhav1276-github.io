@@ -44,14 +44,6 @@ html{
   transform: translate(-50%, -50%);
   /* text-align: center; */
 }
-.awardIcon{
-  color: rgb(250, 181, 52);
-}
-
-.certificateIcon{
-  color: #028dff;
-  padding-right: 10px;
-}
 
 .javaDevloperH1{
   color: #575757;
@@ -244,4 +236,13 @@ h3{
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+.awardIcon{
+  color: rgb(250, 181, 52);
+}
+
+.certificateIcon{
+  color: #028dff;
+  padding-right: 10px;
 }

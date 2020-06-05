@@ -213,6 +213,7 @@
          </div>
          <hr id="skills" class="featurette-divider">
          <h2>Skill Set</h2>
+         <div>&nbsp;&nbsp;</div>
          <div class="container">
             <div class="bar expert" data-skill="Core JAVA"></div>
             <div class="bar expert" data-skill="Apache Camel"></div>
@@ -287,17 +288,17 @@
             <div class="col-sm-5">
                <ul class="list-group">
                   <li class="list-group-item d-flex align-items-center">
-                    Call me on : 
+                     Call me on : 
                      <i class="fa fa-mobile contact" aria-hidden="true"></i> 
                      +91-7387700620
                   </li>
                   <li class="list-group-item d-flex align-items-center">
-                    Write to me @ :
+                     Write to me @ :
                      <a href="mailto:vaibhavverma_27@yahoo.com"><i class="fa fa-envelope-o contact" aria-hidden="true"></i></a>
                      vaibhavverma_27@yahoo.com
                   </li>
                   <li class="list-group-item d-flex align-items-center">
-                      Follow me on  : 
+                     Follow me on  : 
                      <a href="https://www.instagram.com/shutterceased/?hl=en" target="_blank"> <i class="fa fa-instagram contact"></i></a>
                      <a href="https://www.linkedin.com/in/vaibhav-verma-2ab73b80" target="_blank" > <i class="fa fa-linkedin contact"></i></a>
                      <a href="https://github.com/vaibhav1276" target="_blank"> <i class="fa fa-github contact"></i></a>
@@ -321,7 +322,6 @@
       </footer>
    </body>
    <script>
-      $("#nav").scrollspy({ offset: -75 });
       // Get the modal
       var inmModal = document.getElementById('inmModal');
       var wuModal = document.getElementById('wuModal');
@@ -330,32 +330,28 @@
       //Opening Modal
       document.getElementById('inmBtn').addEventListener('click', function() {
       inmModal.style.display = 'block';
-      });
-      document.getElementById('wuBtn').addEventListener('click', function() {
-      wuModal.style.display = 'block';
-      });
-      document.getElementById('ofssBtn').addEventListener('click', function() {
-      ofssModal.style.display = 'block';
+      document.body.style.overflow='hidden';
+      
       });
       
-      // //Closing modal on clicking close sign
-      // document.querySelector('#inmClose').addEventListener('click', function() {
-      // 	inmModal.style.display = 'none';
-      // });
-      // document.querySelector('#wuClose').addEventListener('click', function() {
-      // 	wuModal.style.display = 'none';
-      // });
-      // document.querySelector('#ofssClose').addEventListener('click', function() {
-      // 	ofssModal.style.display = 'none';
-      // });
+      document.getElementById('wuBtn').addEventListener('click', function() {
+      wuModal.style.display = 'block';
+      document.body.style.overflow='hidden';
+      
+      });
+      
+      document.getElementById('ofssBtn').addEventListener('click', function() {
+      ofssModal.style.display = 'block';
+      document.body.style.overflow='hidden';
+      });
       
       window.onclick = function(event) {
       if (event.target == inmModal || event.target == wuModal || event.target == ofssModal) {
       inmModal.style.display = 'none';
       wuModal.style.display = 'none';
       ofssModal.style.display = 'none';
+      document.body.style.overflow='';
       }
       };
-      
    </script>
 </html>

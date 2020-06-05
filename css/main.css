@@ -56,9 +56,9 @@ html{
   text-align: center;
 }
 
-.nav-item{
+/* .nav-item{
   margin: 15px 15px 15px 15px;
-}
+} */
 .card{
   margin: 3% 3% 3% 3%;
 }
@@ -245,4 +245,22 @@ h3{
 .certificateIcon{
   color: #028dff;
   padding-right: 10px;
+}
+
+.navbar{
+  opacity: .9;
+  font-size: 17px;
+}
+
+.nav-item{
+  font-weight: 500;
+}
+
+.nav > li > a:hover{
+  background-color:white;
+}
+
+.contact{
+  padding-right: 15px;
+  padding-left: 15px;
 }
